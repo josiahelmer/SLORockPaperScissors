@@ -18,8 +18,8 @@ public class RPSController
 		System.out.println("Lets play Rock, Paper, Scissors");
 		System.out.println("Please select Rock(R), Paper(P), or Scissors(S)");
 		System.out.print("Enter your move:");
-		Scanner userChoice = new Scanner(System.in);
-		userchange = userChoice.next();
+		Scanner user = new Scanner(System.in);
+		userchange = user.next();
 		userinput = userchange.toUpperCase();
 
 		
@@ -45,7 +45,7 @@ public class RPSController
 	        else if (userinput.matches("G"))
 	       	{
 	        	System.out.println("You can't use a Gun! Thats cheating!");
-	        }
+	       	}
 	        else 
 	        {
 	            System.out.println();
